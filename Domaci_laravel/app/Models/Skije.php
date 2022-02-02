@@ -9,7 +9,7 @@ class Skije extends Model
 {
     use HasFactory;
 
-    protected $fillable=['name','price','description','type_id'];
+    protected $fillable=['name','price','description','type_id', 'user_id'];
 
     public function type(){
         return $this->belongsTo(Type::class);
